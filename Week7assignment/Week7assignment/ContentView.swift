@@ -144,3 +144,8 @@ struct ColorSwatchView: View {
         .cornerRadius(10)
     }
 }
+
+
+#Preview{
+    ContentView()
+}

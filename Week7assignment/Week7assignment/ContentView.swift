@@ -56,6 +56,7 @@ struct ContentView: View {
                             .background(Color.blue)
                             .cornerRadius(10)
                     }
+                  // how to fix this warning?
                     .onChange(of: selectedItem) { newItem in
                         Task {
                             if let data = try? await newItem?.loadTransferable(type: Data.self),
@@ -143,4 +144,8 @@ struct ColorSwatchView: View {
         .background(Color(.secondarySystemBackground))
         .cornerRadius(10)
     }
+}
+
+#Preview {
+  ContentView()
 }

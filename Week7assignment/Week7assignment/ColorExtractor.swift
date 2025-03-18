@@ -1,6 +1,8 @@
 import SwiftUI
 import UIKit
 
+// Thanks to Chat-GPT
+
 class ColorExtractor {
     func extractColors(from image: UIImage, count: Int) -> [(color: Color, hex: String, rgb: String)] {
         guard let cgImage = image.cgImage else { return [] }
@@ -41,6 +43,8 @@ class ColorExtractor {
 
         let sortedColors = colorCounts.sorted { $0.value > $1.value }.prefix(count)
 
+      // lookup array map function
+      // whatg is a tuple
         return sortedColors.map { color, _ in
             let hex = color.toHexString()
             let components = color.cgColor.components ?? [0, 0, 0]

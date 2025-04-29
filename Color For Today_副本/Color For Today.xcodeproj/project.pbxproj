@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A96B02312DB7DC2F001D4F82 /* LunarCalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B02302DB7DC26001D4F82 /* LunarCalendarHelper.swift */; };
+		A96B02612DC10F2A001D4F82 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B02602DC10F2A001D4F82 /* WidgetKit.framework */; };
+		A96B02632DC10F2A001D4F82 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B02622DC10F2A001D4F82 /* SwiftUI.framework */; };
+		A96B02742DC10F2B001D4F82 /* ColorForTodayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A96B025E2DC10F2A001D4F82 /* ColorForTodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A96B027A2DC11009001D4F82 /* LunarCalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B02302DB7DC26001D4F82 /* LunarCalendarHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A96B02132DB7DABE001D4F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96B01FA2DB7DABD001D4F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96B02012DB7DABD001D4F82;
+			remoteInfo = "Color For Today";
+		};
+		A96B021D2DB7DABE001D4F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96B01FA2DB7DABD001D4F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96B02012DB7DABD001D4F82;
+			remoteInfo = "Color For Today";
+		};
+		A96B02722DC10F2B001D4F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96B01FA2DB7DABD001D4F82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96B025D2DC10F2A001D4F82;
+			remoteInfo = ColorForTodayWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A96B02792DC10F2B001D4F82 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A96B02742DC10F2B001D4F82 /* ColorForTodayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A96B02022DB7DABD001D4F82 /* Color For Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color For Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96B02122DB7DABE001D4F82 /* Color For TodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color For TodayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96B021C2DB7DABE001D4F82 /* Color For TodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color For TodayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96B02302DB7DC26001D4F82 /* LunarCalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarCalendarHelper.swift; sourceTree = "<group>"; };
+		A96B025E2DC10F2A001D4F82 /* ColorForTodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ColorForTodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96B02602DC10F2A001D4F82 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A96B02622DC10F2A001D4F82 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A96B02752DC10F2B001D4F82 /* Exceptions for "ColorForTodayWidget" folder in "ColorForTodayWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A96B025D2DC10F2A001D4F82 /* ColorForTodayWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A96B02042DB7DABD001D4F82 /* Color For Today */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Color For Today";
+			sourceTree = "<group>";
+		};
+		A96B02152DB7DABE001D4F82 /* Color For TodayTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Color For TodayTests";
+			sourceTree = "<group>";
+		};
+		A96B021F2DB7DABE001D4F82 /* Color For TodayUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Color For TodayUITests";
+			sourceTree = "<group>";
+		};
+		A96B02642DC10F2A001D4F82 /* ColorForTodayWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A96B02752DC10F2B001D4F82 /* Exceptions for "ColorForTodayWidget" folder in "ColorForTodayWidgetExtension" target */,
+			);
+			path = ColorForTodayWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A96B01FF2DB7DABD001D4F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B020F2DB7DABE001D4F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B02192DB7DABE001D4F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B025B2DC10F2A001D4F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B02632DC10F2A001D4F82 /* SwiftUI.framework in Frameworks */,
+				A96B02612DC10F2A001D4F82 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A96B01F92DB7DABD001D4F82 = {
+			isa = PBXGroup;
+			children = (
+				A96B02302DB7DC26001D4F82 /* LunarCalendarHelper.swift */,
+				A96B02042DB7DABD001D4F82 /* Color For Today */,
+				A96B02152DB7DABE001D4F82 /* Color For TodayTests */,
+				A96B021F2DB7DABE001D4F82 /* Color For TodayUITests */,
+				A96B02642DC10F2A001D4F82 /* ColorForTodayWidget */,
+				A96B025F2DC10F2A001D4F82 /* Frameworks */,
+				A96B02032DB7DABD001D4F82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A96B02032DB7DABD001D4F82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A96B02022DB7DABD001D4F82 /* Color For Today.app */,
+				A96B02122DB7DABE001D4F82 /* Color For TodayTests.xctest */,
+				A96B021C2DB7DABE001D4F82 /* Color For TodayUITests.xctest */,
+				A96B025E2DC10F2A001D4F82 /* ColorForTodayWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A96B025F2DC10F2A001D4F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A96B02602DC10F2A001D4F82 /* WidgetKit.framework */,
+				A96B02622DC10F2A001D4F82 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A96B02012DB7DABD001D4F82 /* Color For Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96B02262DB7DABE001D4F82 /* Build configuration list for PBXNativeTarget "Color For Today" */;
+			buildPhases = (
+				A96B01FE2DB7DABD001D4F82 /* Sources */,
+				A96B01FF2DB7DABD001D4F82 /* Frameworks */,
+				A96B02002DB7DABD001D4F82 /* Resources */,
+				A96B02792DC10F2B001D4F82 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A96B02332DB7DCAF001D4F82 /* PBXTargetDependency */,
+				A96B02732DC10F2B001D4F82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A96B02042DB7DABD001D4F82 /* Color For Today */,
+			);
+			name = "Color For Today";
+			packageProductDependencies = (
+			);
+			productName = "Color For Today";
+			productReference = A96B02022DB7DABD001D4F82 /* Color For Today.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A96B02112DB7DABE001D4F82 /* Color For TodayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96B02292DB7DABE001D4F82 /* Build configuration list for PBXNativeTarget "Color For TodayTests" */;
+			buildPhases = (
+				A96B020E2DB7DABE001D4F82 /* Sources */,
+				A96B020F2DB7DABE001D4F82 /* Frameworks */,
+				A96B02102DB7DABE001D4F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A96B02142DB7DABE001D4F82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A96B02152DB7DABE001D4F82 /* Color For TodayTests */,
+			);
+			name = "Color For TodayTests";
+			packageProductDependencies = (
+			);
+			productName = "Color For TodayTests";
+			productReference = A96B02122DB7DABE001D4F82 /* Color For TodayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A96B021B2DB7DABE001D4F82 /* Color For TodayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96B022C2DB7DABE001D4F82 /* Build configuration list for PBXNativeTarget "Color For TodayUITests" */;
+			buildPhases = (
+				A96B02182DB7DABE001D4F82 /* Sources */,
+				A96B02192DB7DABE001D4F82 /* Frameworks */,
+				A96B021A2DB7DABE001D4F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A96B021E2DB7DABE001D4F82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A96B021F2DB7DABE001D4F82 /* Color For TodayUITests */,
+			);
+			name = "Color For TodayUITests";
+			packageProductDependencies = (
+			);
+			productName = "Color For TodayUITests";
+			productReference = A96B021C2DB7DABE001D4F82 /* Color For TodayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A96B025D2DC10F2A001D4F82 /* ColorForTodayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96B02762DC10F2B001D4F82 /* Build configuration list for PBXNativeTarget "ColorForTodayWidgetExtension" */;
+			buildPhases = (
+				A96B025A2DC10F2A001D4F82 /* Sources */,
+				A96B025B2DC10F2A001D4F82 /* Frameworks */,
+				A96B025C2DC10F2A001D4F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A96B02642DC10F2A001D4F82 /* ColorForTodayWidget */,
+			);
+			name = ColorForTodayWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ColorForTodayWidgetExtension;
+			productReference = A96B025E2DC10F2A001D4F82 /* ColorForTodayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A96B01FA2DB7DABD001D4F82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A96B02012DB7DABD001D4F82 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A96B02112DB7DABE001D4F82 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A96B02012DB7DABD001D4F82;
+					};
+					A96B021B2DB7DABE001D4F82 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A96B02012DB7DABD001D4F82;
+					};
+					A96B025D2DC10F2A001D4F82 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = A96B01FD2DB7DABD001D4F82 /* Build configuration list for PBXProject "Color For Today" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A96B01F92DB7DABD001D4F82;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A96B022F2DB7DB35001D4F82 /* XCRemoteSwiftPackageReference "lunar-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A96B02032DB7DABD001D4F82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A96B02012DB7DABD001D4F82 /* Color For Today */,
+				A96B02112DB7DABE001D4F82 /* Color For TodayTests */,
+				A96B021B2DB7DABE001D4F82 /* Color For TodayUITests */,
+				A96B025D2DC10F2A001D4F82 /* ColorForTodayWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A96B02002DB7DABD001D4F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B02102DB7DABE001D4F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B021A2DB7DABE001D4F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B025C2DC10F2A001D4F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A96B01FE2DB7DABD001D4F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B02312DB7DC2F001D4F82 /* LunarCalendarHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B020E2DB7DABE001D4F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B02182DB7DABE001D4F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96B025A2DC10F2A001D4F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B027A2DC11009001D4F82 /* LunarCalendarHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A96B02142DB7DABE001D4F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A96B02012DB7DABD001D4F82 /* Color For Today */;
+			targetProxy = A96B02132DB7DABE001D4F82 /* PBXContainerItemProxy */;
+		};
+		A96B021E2DB7DABE001D4F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A96B02012DB7DABD001D4F82 /* Color For Today */;
+			targetProxy = A96B021D2DB7DABE001D4F82 /* PBXContainerItemProxy */;
+		};
+		A96B02332DB7DCAF001D4F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A96B02322DB7DCAF001D4F82 /* LunarSwift */;
+		};
+		A96B02732DC10F2B001D4F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A96B025D2DC10F2A001D4F82 /* ColorForTodayWidgetExtension */;
+			targetProxy = A96B02722DC10F2B001D4F82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A96B02242DB7DABE001D4F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A96B02252DB7DABE001D4F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A96B02272DB7DABE001D4F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Color For Today/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A96B02282DB7DABE001D4F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Color For Today/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A96B022A2DB7DABE001D4F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-TodayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Color For Today.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Color For Today";
+			};
+			name = Debug;
+		};
+		A96B022B2DB7DABE001D4F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-TodayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Color For Today.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Color For Today";
+			};
+			name = Release;
+		};
+		A96B022D2DB7DABE001D4F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-TodayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Color For Today";
+			};
+			name = Debug;
+		};
+		A96B022E2DB7DABE001D4F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-TodayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Color For Today";
+			};
+			name = Release;
+		};
+		A96B02772DC10F2B001D4F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorForTodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ColorForTodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-Today.ColorForTodayWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A96B02782DC10F2B001D4F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DK7282ZA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorForTodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ColorForTodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccyffan.Color-For-Today.ColorForTodayWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A96B01FD2DB7DABD001D4F82 /* Build configuration list for PBXProject "Color For Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B02242DB7DABE001D4F82 /* Debug */,
+				A96B02252DB7DABE001D4F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96B02262DB7DABE001D4F82 /* Build configuration list for PBXNativeTarget "Color For Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B02272DB7DABE001D4F82 /* Debug */,
+				A96B02282DB7DABE001D4F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96B02292DB7DABE001D4F82 /* Build configuration list for PBXNativeTarget "Color For TodayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B022A2DB7DABE001D4F82 /* Debug */,
+				A96B022B2DB7DABE001D4F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96B022C2DB7DABE001D4F82 /* Build configuration list for PBXNativeTarget "Color For TodayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B022D2DB7DABE001D4F82 /* Debug */,
+				A96B022E2DB7DABE001D4F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96B02762DC10F2B001D4F82 /* Build configuration list for PBXNativeTarget "ColorForTodayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B02772DC10F2B001D4F82 /* Debug */,
+				A96B02782DC10F2B001D4F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A96B022F2DB7DB35001D4F82 /* XCRemoteSwiftPackageReference "lunar-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/6tail/lunar-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A96B02322DB7DCAF001D4F82 /* LunarSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A96B022F2DB7DB35001D4F82 /* XCRemoteSwiftPackageReference "lunar-swift" */;
+			productName = LunarSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A96B01FA2DB7DABD001D4F82 /* Project object */;
+}

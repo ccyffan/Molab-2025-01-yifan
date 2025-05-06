@@ -12,6 +12,8 @@
 		A96B02632DC10F2A001D4F82 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B02622DC10F2A001D4F82 /* SwiftUI.framework */; };
 		A96B02742DC10F2B001D4F82 /* ColorForTodayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A96B025E2DC10F2A001D4F82 /* ColorForTodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A96B027A2DC11009001D4F82 /* LunarCalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B02302DB7DC26001D4F82 /* LunarCalendarHelper.swift */; };
+		A96C9B1A2DC999AB0052C44C /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C9B192DC999A50052C44C /* CalendarHeaderView.swift */; };
+		A96C9B1B2DC999AB0052C44C /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C9B192DC999A50052C44C /* CalendarHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		A96B025E2DC10F2A001D4F82 /* ColorForTodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ColorForTodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96B02602DC10F2A001D4F82 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A96B02622DC10F2A001D4F82 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A96C9B192DC999A50052C44C /* CalendarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -135,6 +138,7 @@
 		A96B01F92DB7DABD001D4F82 = {
 			isa = PBXGroup;
 			children = (
+				A96C9B192DC999A50052C44C /* CalendarHeaderView.swift */,
 				A96B02302DB7DC26001D4F82 /* LunarCalendarHelper.swift */,
 				A96B02042DB7DABD001D4F82 /* Color For Today */,
 				A96B02152DB7DABE001D4F82 /* Color For TodayTests */,
@@ -348,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96C9B1A2DC999AB0052C44C /* CalendarHeaderView.swift in Sources */,
 				A96B02312DB7DC2F001D4F82 /* LunarCalendarHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96B027A2DC11009001D4F82 /* LunarCalendarHelper.swift in Sources */,
+				A96C9B1B2DC999AB0052C44C /* CalendarHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

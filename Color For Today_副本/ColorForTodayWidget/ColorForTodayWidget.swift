@@ -1,9 +1,3 @@
-//
-//  ColorForTodayWidget.swift
-//  ColorForTodayWidget
-//
-//  Created by 陈艺凡 on 4/29/25.
-//
 import WidgetKit
 import SwiftUI
 
@@ -28,7 +22,7 @@ struct LuckyColorProvider: TimelineProvider {
     func getTimeline(in context: Context, completion: @escaping (Timeline<LuckyColorEntry>) -> ()) {
         let now = Date()
         let entry = makeEntry(for: now)
-        let next = Calendar.current.nextDate(after: now, matching: DateComponents(hour:0, minute:5), matchingPolicy: .nextTime)!
+        let next = Calendar.current.nextDate(after: now, matching: DateComponents(hour: 0, minute: 5), matchingPolicy: .nextTime)!
         completion(Timeline(entries: [entry], policy: .after(next)))
     }
 
@@ -44,7 +38,6 @@ struct LuckyColorProvider: TimelineProvider {
 struct LuckyColorWidgetEntryView: View {
     var entry: LuckyColorEntry
 
-    // 将 Color 名称映射成 SwiftUI Color
     private func bgColor(for name: String) -> Color {
         switch name {
         case "Green":  return .green
@@ -61,19 +54,17 @@ struct LuckyColorWidgetEntryView: View {
         case "Gray":   return .gray
         case "Black":  return .black
         case "Navy":   return Color(red: 0, green: 0, blue: 0.5)
-        default:       return .gray
+        default:        return .gray
         }
     }
 
     var body: some View {
         content
         #if os(iOS) && swift(>=5.9)
-        // iOS17+：自动填充整个 widget 容器
         .containerBackground(for: .widget) {
             bgColor(for: entry.luckyColor)
         }
         #else
-        // iOS16 及以下：经典 ZStack
         .background(
             ZStack {
                 bgColor(for: entry.luckyColor)
@@ -83,19 +74,27 @@ struct LuckyColorWidgetEntryView: View {
         #endif
     }
 
-    // 抽出来的内容层，避免重复
     private var content: some View {
         VStack(spacing: 8) {
             Text("Color For Today")
                 .font(.system(.headline, design: .monospaced))
                 .foregroundColor(.white)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
+                // Ensures text does not truncate with ellipsis
+                .fixedSize(horizontal: false, vertical: false)
+
             Text(entry.luckyColor)
                 .font(.system(.largeTitle, design: .monospaced))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+
             Text("\(entry.dayElement) → \(entry.generatedElement)")
                 .font(.system(.caption, design: .monospaced))
                 .foregroundColor(.white.opacity(0.8))
+                .multilineTextAlignment(.center)
         }
         .padding()
     }
@@ -110,7 +109,7 @@ struct ColorForTodayWidget: Widget {
             LuckyColorWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("幸运色小组件")
-        .description("锁屏或主屏一键查看今日幸运颜色和五行信息。")
+        .description("Quickly view today's lucky color and Five Elements information on your lock or home screen.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

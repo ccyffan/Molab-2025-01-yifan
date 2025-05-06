@@ -14,30 +14,27 @@ struct LaunchView: View {
     var body: some View {
         Group {
             if isActive {
-                // 3 秒后自动切换到主界面
                 ContentView()
             } else {
-                // 闪屏界面
                 ZStack {
-                    // 动画渐变背景
                     LinearGradient(
-                        gradient: Gradient(colors: [.purple, .pink, .orange, .yellow]),
+                        gradient: Gradient(colors: [.pink, .blue, .orange ]),
                         startPoint: animateGradient ? .topLeading : .bottomTrailing,
                         endPoint: animateGradient ? .bottomTrailing : .topLeading
                     )
                     .ignoresSafeArea()
                     .animation(.linear(duration: 4).repeatForever(autoreverses: true), value: animateGradient)
 
-                    // App 名称
-                    Text("Color For Today")
-                        .font(.system(size: 40, weight: .bold, design: .rounded))
-                        .foregroundColor(.white)
-                        .shadow(radius: 5)
+                 
+                    Text("COLOR FOR TODAY")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .kerning(5)
+                        .foregroundColor(.white.opacity(0.7))
+
                 }
                 .onAppear {
-                    // 启动动画
                     animateGradient = true
-                    // 3 秒后切换
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         withAnimation {
                             isActive = true
@@ -48,6 +45,13 @@ struct LaunchView: View {
         }
     }
 }
+
+struct LaunchView_Previews: PreviewProvider {
+    static var previews: some View {
+        LaunchView()
+    }
+}
+
 #Preview {
     LaunchView()
 }
